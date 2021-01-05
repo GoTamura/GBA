@@ -1,0 +1,22 @@
+{
+"arch": "arm",
+"data-layout": "e-m:e-p:32:32-i64:64-v128:64:128-a:0:32-n32-S64",
+"llvm-target": "arm-none-eabi",
+"target-endian": "little",
+"target-pointer-width": "32",
+"target-c-int-width": "32",
+"os": "none",
+"relocation-model": "static",
+"archive-format": "gnu",
+"target-env": "gnu",
+"no-compiler-rt": true,
+"linker-is-gnu": true,
+"linker-flavor": "ld",
+"pre-link-args": {
+  "ld": [
+    "-Tlinker.ld"
+  ]
+},
+"disable-redzone": true,
+"cpu": "arm7tdmi"
+}

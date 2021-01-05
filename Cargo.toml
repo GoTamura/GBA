@@ -1,0 +1,19 @@
+[package]
+name = "rust-basemetal-gba"
+version = "0.1.0"
+authors = ["go"]
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["staticlib"]
+
+[profile.dev]
+panic = "abort"
+opt-level = 0
+debug = true
+lto = true
+
+[profile.release]
+panic = "abort"
+opt-level = 2
+lto = true
